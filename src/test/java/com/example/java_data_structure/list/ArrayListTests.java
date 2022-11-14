@@ -27,10 +27,12 @@ public class ArrayListTests {
         MyArrayList myArrayList = new MyArrayList();
 
         for(int i = 1; i <= 3; i++) myArrayList.add(i);
+
         assertThat(myArrayList.get(1)).isEqualTo(2);
 
         myArrayList.add(1, 10);
         assertThat(myArrayList.get(1)).isEqualTo(10);
+        assertThat(myArrayList.get(2)).isEqualTo(2);
     }
 
 }

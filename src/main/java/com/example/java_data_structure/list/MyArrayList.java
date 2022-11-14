@@ -19,4 +19,11 @@ public class MyArrayList {
         array[lastIndex] = n;
         lastIndex++;
     }
+    public void add(int index, int element) {
+        for(int i = index; i < array.length - 1; i++) {
+            array[i+1] = array[i];
+        }
+        array[index] = element;
+        lastIndex++;
+    }
 }
