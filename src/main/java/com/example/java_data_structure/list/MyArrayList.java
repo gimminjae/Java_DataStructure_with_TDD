@@ -3,7 +3,7 @@ package com.example.java_data_structure.list;
 public class MyArrayList {
     private int[] array;
     private long size;
-    private long lastIndex;
+    private int lastIndex;
 
     public MyArrayList() {
         array = new int[10];
@@ -16,6 +16,7 @@ public class MyArrayList {
     }
 
     public void add(int n) {
-
+        array[lastIndex] = n;
+        lastIndex++;
     }
 }
